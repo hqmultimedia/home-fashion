@@ -1,0 +1,306 @@
+/*-------------------------------------------------------------------------------- GIAO DIỆN MENU LEFT */
+
+.layout-left {
+    --width-sidebar: 291px;
+    /* content */
+    --margin--top--content: 0;
+    --padding--content: 0px 45px 0 calc(var(--width-sidebar) + 45px);
+    --number-data--in--view: 4;
+    /* footer */
+    --padding--father--box--footer: var(--width-sidebar);
+    --number-column--footer--in--view: 4;
+    --padding--box--footer: 0 45px 0 45px;
+}
+
+
+/* RESPONSIVE */
+
+
+/* điểm thay đổi menu là 1065px */
+
+
+/* setting thuộc tính chung */
+
+@media (min-width: 320px) and (max-width: 1065px) {
+    .layout-left {
+        --margin--top--content: var(--height--menu);
+        /* khi chuyển về màn hình dưới 1065px thì 2 biến padding box top và padding box menu sẽ ko dùng tới */
+        /* --padding--box--top: 0 69px 0 69px;
+        --padding--box--menu: 0 69px 0 69px; */
+        --padding--content: 0px 45px 0 45px;
+        --postition--button--menu: 45px;
+        --postition--box-icon: 45px;
+        --padding--box-ul: 45px;
+        /* footer */
+        --padding--father--box--footer: 0;
+        --number-column--footer--in--view: 2;
+    }
+}
+
+
+/* setting thuộc tính riêng */
+
+@media (min-width: 992px) and (max-width: 1065px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .layout-left {
+        --number-data--in--view: 3;
+    }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+    .layout-left {
+        --number-data--in--view: 2;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
+    .layout-left {
+        /* khi chuyển về màn hình dưới 1065px thì 2 biến padding box top và padding box menu sẽ ko dùng tới */
+        /* --padding--box--top: 0 69px 0 69px;
+        --padding--box--menu: 0 69px 0 69px; */
+        --padding--content: 0px 25px 0 25px;
+        --postition--button--menu: 25px;
+        --postition--box-icon: 25px;
+        --padding--box-ul: 25px;
+        --number-data--in--view: 1;
+        /* Footer */
+        --padding--box--footer: 0 25px 0 25px;
+        --number-column--footer--in--view: 1;
+    }
+}
+
+
+/*------------------------------------------------------------------------------ PHẦN MENU */
+
+.layout-left .box-menu {
+    width: var(--width-sidebar);
+    height: 100vh;
+    padding: 0;
+    display: block;
+}
+
+.layout-left .box-menu .logo {
+    height: var(--height--menu);
+    text-align: center;
+}
+
+.layout-left .box-link-icon {
+    flex-direction: column-reverse;
+}
+
+.layout-left .box-menu .box-link {
+    width: 100%;
+    padding-left: var(--padding--box-ul);
+}
+
+.layout-left .box-menu .box-link ul.ul-sidebar {
+    display: block;
+}
+
+.layout-left .box-menu .box-link ul.ul-sidebar>li {
+    padding: 0 0 0 15px;
+    position: relative;
+}
+
+.layout-left .items-drop {
+    background-color: #262626;
+    color: #c5b5b5;
+    border-color: #3e3a3a;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.layout-left .items-drop:hover {
+    color: burlywood;
+}
+
+.layout-left .sidebar-link .scroll_content {
+    left: 0px;
+    top: 0;
+    transition: 0.4s;
+}
+
+.layout-left .sidebar-link:hover .scroll_content {
+    left: var(--width-sidebar);
+    top: 0 !important;
+    transition: 0.4s;
+}
+
+.layout-left .scroll_content .items-drop:hover .scroll_content_2 {
+    left: 100%;
+}
+
+.layout-left .scroll_content_2 .items-drop {
+    border-left: 1px solid #5e5656;
+}
+
+.layout-left .scroll_content_2 .items-drop:hover {
+    background-color: #3a3939;
+    color: #c5b5b5 !important;
+}
+
+
+/* dành cho dropdown center */
+
+.layout-left li.sidebar-link .scroll_content.drop-center {
+    position: fixed;
+    width: calc(100vmax - var(--width-sidebar)) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    left: -100%;
+    top: 0 !important;
+    transition: 0.7s;
+}
+
+.layout-left .sidebar-link:hover .scroll_content.drop-center {
+    left: var(--width-sidebar);
+    transition: 0.7s;
+}
+
+.layout-left .sidebar-link:hover .icon-dropdown {
+    transform: translateY(-50%) rotate(-90deg);
+    transition: 0.5s;
+}
+
+
+/* end dropdown center */
+
+
+/* end dropdown */
+
+.layout-left .box-menu .box-link ul.ul-sidebar>li .box_scroll .scroll_title a {
+    display: block;
+    width: 100%;
+}
+
+.layout-left .box-menu .box-link ul.ul-sidebar>li .box_scroll .scroll_title {
+    padding: 15px 0;
+}
+
+.layout-left .box-menu .box-link ul.ul-sidebar>li .box_scroll .scroll_title .icon-dropdown {
+    right: 14px;
+}
+
+
+/* End children_box : box link */
+
+
+/* children_box : box icon phần input tìm kiếm */
+
+.layout-left .box-menu .box-menu-search {
+    position: initial;
+    opacity: 1;
+    visibility: visible;
+    width: calc(100% - 30px);
+    height: auto;
+    display: block;
+    margin: 15px 15px 0 15px;
+    transform: translateY(-10px);
+    background-color: transparent;
+}
+
+.layout-left .box-menu .box-menu-search .icon-action-search {
+    color: white;
+}
+
+.layout-left .box-menu .box-menu-search form input {
+    font-size: 15px;
+    background-color: #4a363686;
+    color: white;
+}
+
+.layout-left .box-menu .box-menu-search form button:last-child {
+    display: none;
+}
+
+
+/* children_box : box icon phần input tìm kiếm */
+
+
+/* children_box : box icon*/
+
+.layout-left .box-menu .box-icon {
+    display: none;
+}
+
+
+/*------------------------------------------------------------------------------ PHẦN SLIDE */
+
+.layout-left .carousel {
+    padding-top: 0px;
+}
+
+
+/*------------------------------------------------------------------------------ PHẦN CONTENT */
+
+
+/*------------------------------------------------------------------------------ PHẦN PHÂN TRANG */
+
+
+/*------------------------------------------------------------------------------ PHẦN FOOOTER */
+
+@media (min-width:320px) and (max-width:1065px) {
+    .layout-left .scroll_content_2 .items-drop {
+        border-left: none;
+    }
+    .layout-left .box-menu {
+        height: var(--height--menu);
+    }
+    .layout-left .box-menu .box-icon {
+        display: flex;
+    }
+    .layout-left .box-menu .box-menu-search form button:last-child {
+        display: block;
+    }
+    .layout-left .box-menu .box-menu-search {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: -100%;
+        opacity: 0;
+        visibility: hidden;
+        background-color: white;
+        height: var(--height--menu);
+        display: flex;
+        align-items: center;
+        transition: 1s;
+        box-shadow: 0 2px 3px rgb(0 0 0 / 4%);
+        margin: 0;
+        transform: none;
+    }
+    .layout-left .box-menu-search.show {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+        transition: 0.4s;
+    }
+    .layout-left .box-menu-search form input:focus,
+    .layout-left .box-menu-search form button:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .layout-left .box-menu-search form input {
+        border: none;
+        font-size: 19px !important;
+        background-color: transparent !important;
+        color: #262626 !important;
+    }
+    .layout-left .icon-action-search {
+        transition: 0.4s;
+        font-size: 20px;
+        color: #262626 !important;
+    }
+    .layout-left .icon-action-search:hover {
+        transition: 0.4s;
+        transform: scale(1.2);
+    }
+    /* phần dropdown center */
+    .layout-left li.sidebar-link .scroll_content.drop-center {
+        width: 100% !important;
+    }
+    /* End phần dropdown center */
+}
+
+
+/* End Responsive */

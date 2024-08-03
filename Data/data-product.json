@@ -1,0 +1,82 @@
+[{
+        "data_name": "BLACK CROP TOP 1",
+        "data_category": "MAKEUP & COSMETICS",
+        "data_img": "source-data/product/P-01.jpg",
+        "data_img_2": "source-data/product/P-02.jpg",
+        "data_status": "2",
+        "data_price": "$390.00",
+        "data_price_discount": "",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+        "data_name": "BLACK CROP TOP",
+        "data_category": "MAKEUP & COSMETICS",
+        "data_img": "source-data/product/P2-01.jpg",
+        "data_img_2": "source-data/product/P2-02.jpg",
+        "data_status": "1",
+        "data_price": "$400.00",
+        "data_price_discount": "",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+        "data_name": "BLACK CROP TOP",
+        "data_category": "MAKEUP & COSMETICS",
+        "data_img": "source-data/product/P3-01.jpg",
+        "data_img_2": "source-data/product/P3-02.jpg",
+        "data_status": "",
+        "data_price": "$390.00",
+        "data_price_discount": "",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+        "data_name": "BLACK CROP TOP",
+        "data_category": "MAKEUP & COSMETICS",
+        "data_img": "source-data/product/P4-01.jpg",
+        "data_img_2": "source-data/product/P4-02.jpg",
+        "data_status": "",
+        "data_price": "$390.00",
+        "data_price_discount": "$260.00",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+        "data_name": "BLACK CROP TOP",
+        "data_category": "MAKEUP & COSMETICS",
+        "data_img": "source-data/product/P5-01.jpg",
+        "data_img_2": "source-data/product/P5-02.jpg",
+        "data_status": "",
+        "data_price": "$390.00",
+        "data_price_discount": "",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+        "data_name": "BLACK CROP TOP",
+        "data_category": "MAKEUP & COSMETICS",
+        "data_img": "source-data/product/P6-01.jpg",
+        "data_img_2": "source-data/product/P6-02.jpg",
+        "data_status": "1",
+        "data_price": "$390.00",
+        "data_price_discount": "",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+        "data_name": "BLACK CROP TOP",
+        "data_category": "MAKEUP & COSMETICS",
+        "data_img": "source-data/product/P7-01.jpg",
+        "data_img_2": "source-data/product/P7-02.jpg",
+        "data_status": "",
+        "data_price": "$390.00",
+        "data_price_discount": "",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+        "data_name": "BLACK CROP TOP",
+        "data_category": "MAKEUP & COSMETICS",
+        "data_img": "source-data/product/P8-01.jpg",
+        "data_img_2": "source-data/product/P8-02.jpg",
+        "data_status": "2",
+        "data_price": "$390.00",
+        "data_price_discount": "",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    }
+
+]

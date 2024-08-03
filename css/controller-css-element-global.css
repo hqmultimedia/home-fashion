@@ -1,0 +1,112 @@
+/* css include */
+
+@import url(element-global/setting/setting-theme.css);
+@import url(element-global/setting/global-modal-box.css);
+
+/* ko thay đổi */
+
+@import url(element-global/view-include/view-include-setting.css);
+@import url(element-global/carousel/carousel.css);
+@import url(element-global/menu/menu.css);
+@import url(element-global/footer/footer.css);
+
+/* theme */
+
+@import url(theme-layout/layout-left.css);
+.load__img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99997;
+    background-color: #191919;
+}
+
+:root {
+    --height--box--top: 39px;
+    --height--menu: 79px;
+    --height--footer--top: 355px;
+    --height--footer--bottom: 60px;
+}
+
+
+/*-------------------------------------------------------------------------------- GIAO DIỆN MENU CENTER*/
+
+.layout_center {
+    --width-sidebar: 0px;
+    --padding--box--top: 0 69px 0 69px;
+    --padding--box--menu: 0 69px 0 69px;
+    /* content :  */
+    --margin--top--content: calc(var(--height--box--top) + var(--height--menu));
+    --padding--content: 0px 69px 0px 69px;
+    /* --width--border--content: calc(69px + 69px + 5px + 5px); */
+    --number-data--in--view: 4;
+    --data--two--number-data--in--view: 3;
+    /* footer */
+    --padding--father--box--footer: 0;
+    --number-column--footer--in--view: 4;
+    --padding--box--footer: 0 69px 0 69px;
+}
+
+
+/* RESPONSIVE */
+
+
+/* điểm thay đổi menu là 1065px */
+
+
+/* setting thuộc tính chung */
+
+@media (min-width: 320px) and (max-width: 1065px) {
+    .layout_center {
+        --margin--top--content: calc(var(--height--menu));
+        /* khi chuyển về màn hình dưới 1065px thì 2 biến padding box top và padding box menu sẽ ko dùng tới */
+        /* --padding--box--top: 0 69px 0 69px;
+        --padding--box--menu: 0 69px 0 69px; */
+        --postition--button--menu: 69px;
+        --postition--box-icon: 69px;
+        --padding--box-ul: 69px;
+        --number-column--footer--in--view: 2;
+    }
+}
+
+
+/* setting thuộc tính riêng */
+
+@media (min-width: 992px) and (max-width: 1065px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .layout_center {
+        --number-data--in--view: 3;
+        --data--two--number-data--in--view: 3;
+    }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+    .layout_center {
+        --number-data--in--view: 2;
+        --data--two--number-data--in--view: 1;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
+    .layout_center {
+        --number-data--in--view: 1;
+        --data--two--number-data--in--view: 1;
+        /* khi chuyển về màn hình dưới 1065px thì 2 biến padding box top và padding box menu sẽ ko dùng tới */
+        /* --padding--box--top: 0 69px 0 69px;
+        --padding--box--menu: 0 69px 0 69px; */
+        --postition--button--menu: 25px;
+        --postition--box-icon: 25px;
+        --padding--box-ul: 25px;
+        /* content :  */
+        --padding--content: 0px 25px 0px 25px;
+        /* --width--border--content: calc(25px + 25px + 15px + 15px); */
+        /* footer */
+        --number-column--footer--in--view: 1;
+        --padding--box--footer: 0 25px 0 25px;
+    }
+}

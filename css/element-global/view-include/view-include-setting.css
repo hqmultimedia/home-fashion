@@ -1,0 +1,38 @@
+.includeView.hidden-carousel {
+    margin-top: var(--margin--top--content);
+    padding-top: 25px;
+    display: block !important;
+}
+
+.includeView {
+    margin-top: 25px;
+    padding: var(--padding--content);
+    min-height: 100vh;
+}
+
+.box-repeat-data,
+.box-repeat-data-two {
+    display: flex;
+    flex-wrap: wrap;
+    --spacing: 25px;
+    --columns: var( --number-data--in--view);
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.box-repeat-data-two {
+    --columns: var( --data--two--number-data--in--view);
+}
+
+.box-dir-paginate-data {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+    margin-top: 0;
+    margin-right: 0;
+}
+
+
+/* .box-dir-paginate-data .one-data {} */
+
+
+/* RESPONSIVE */

@@ -1,0 +1,392 @@
+<style>
+    .bottom-left.edit-by-project {
+        width: 100%;
+    }
+    
+    .bottom-left.edit-by-project H6 {
+        width: 100%;
+        background-color: black;
+        transition: 0.4s;
+        color: burlywood;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bottom-left.edit-by-project:hover H6 {
+        background-color: #ea9195!important;
+        color: white;
+        transition: 0.4s;
+    }
+    
+    .box-ratio .overlay-show-hidden::before {
+        background-color: #000 !important;
+        opacity: 0.4 !important;
+        transition: 0.4s;
+    }
+    
+    .box-ratio:hover .overlay-show-hidden::before {
+        /* transform: scale(); */
+        visibility: visible;
+        transition: 0.4s !important;
+        background-color: #000 !important;
+        opacity: 0.1 !important;
+    }
+    
+    .title-category-large {
+        position: relative;
+        text-align: center;
+        height: 102px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    
+    .title-category-large>h6 {
+        font-size: 20px;
+    }
+    
+    .title-category-large:after {
+        content: '';
+        position: absolute;
+        width: calc(100vmax - 148px);
+        top: 50%;
+        transform: translateY(-50%);
+        border-bottom: 1px solid #ebebeb;
+        z-index: -1;
+    }
+    /* phần box product */
+    
+    .data-category p {
+        font-size: 12px;
+        margin: 10px 0;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 5px;
+        font-weight: 400;
+    }
+    
+    .data-product {
+        padding-bottom: 20px;
+    }
+    
+    .data-product H6 {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #282222;
+    }
+    
+    .data-product .box-price {
+        display: flex;
+    }
+    
+    .data-product .box-price>p {
+        font-size: 14px;
+        color: cadetblue;
+        font-weight: 500;
+    }
+    
+    .data-product .box-price del {
+        font-size: 14px;
+        color: brown;
+        padding-left: 5px;
+        font-weight: 600;
+    }
+    
+    .image-opacity-zoom .image2 {
+        transition: 0.7s ease-in-out !important;
+    }
+    
+    .image-opacity-zoom:hover .image2 {
+        transform: scale(1.1) !important;
+        transition: 0.7s ease-in-out !important;
+    }
+    
+    .box-add-to-cart {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        transition: 0.5s;
+    }
+    
+    .box-add-to-cart a H6 {
+        width: 100%;
+        /* padding: 15px 10px; */
+        /* background-color: beige; */
+        background-color: #282222;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 10px;
+        transition: 0.4s;
+    }
+    
+    .box-add-to-cart a H6:hover {
+        background-color: #a9a9a9!important;
+        color: #fff !important;
+        transition: 0.4s;
+    }
+    
+    .box-ratio:hover .box-add-to-cart {
+        bottom: 0;
+        transition: 0.5s;
+    }
+    
+    .box-add-to-cart a H6 {
+        /* color: #282222; */
+        color: white;
+        font-size: 14px;
+    }
+    
+    .box-highlight {
+        position: absolute;
+        top: -32px;
+        right: 16px;
+        height: 68px;
+        width: 68px;
+        background-color: #ea9195;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+    }
+    
+    .box-highlight.out-of-stock {
+        background-color: #282222;
+        color: #fff;
+    }
+    
+    .box-highlight.bestseller {
+        background-color: #ffc107;
+        color: #fff;
+    }
+    
+    .box-highlight>h6 {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    /* End phần box product */
+    
+    .img-bottom-1 {
+        height: auto;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    
+    .img-bottom-left {
+        padding-left: 25px;
+        width: 50%;
+        font-weight: 500;
+        color: #f2eded;
+    }
+    
+    .img-bottom-right {
+        padding-right: 25px;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .img-bottom-right a {
+        width: 116px;
+        background-color: black;
+        display: block;
+        padding: 10px;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .img-bottom-2 {
+        margin-bottom: 25px;
+    }
+    
+    @media (min-width:768px) and (max-width:1065px) {
+        .bottom-left.edit-by-project H6 {
+            /* height: 39px; */
+            font-size: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+    }
+    
+    @media (min-width:320px) and (max-width:544px) {
+        .img-bottom-left {
+            width: 100%;
+        }
+        .img-bottom-right {
+            width: 100%;
+            padding-right: 0;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .title-category-large:after {
+            content: '';
+            width: calc(100vmax - 224px);
+        }
+        .title-category-large h6 {
+            font-size: 20px;
+        }
+    }
+</style>
+<div class="img-top margin-t-15 margin-b-30" ng-model="page_data" ng-init="page_data='home'">
+
+    <a href=""> <img width="100%" height="100%" src="source-data/slide/slide-top.png" alt=""></a>
+</div>
+
+<div class="box-repeat-data-two" ng-init="getDataCategory()">
+    <div class="box-dir-paginate-data" ng-repeat="one_data_category in data_get_category ">
+        <!-- 1 -->
+        <div class="one-data">
+
+            <!-- box-ratio-xx -->
+            <a ng-click="scroll_top()" href="posts-demo">
+                <div class="box-ratio ratio-5-3 image-zoom">
+                    <!-- <div class="image" style="background-image:url(../../SourceData/Fashion/15.jpg);"></div> -->
+                    <div class="image2 overlay-show-hidden" style="background-image:url({{one_data_category.posts_img}});"></div>
+
+                    <div class="bottom-left edit-by-project">
+                        <a href="">
+                            <h6>SHOP CLOTHES</h6>
+                        </a>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- title large -->
+
+<div class="title-category-large">
+    <h6>NEW ARRIVALS </h6>
+</div>
+
+<div class="box-repeat-data" ng-init="getDataPagination()">
+    <div class="box-dir-paginate-data" dir-paginate="one_data in data_get |orderBy :optionsModelDisplay.hienthi| filter:tukhoa |itemsPerPage:optionsModelQuantity.PageSize">
+        <!-- 1 -->
+        <div class="one-data relative">
+
+            <!-- box-ratio-xx -->
+
+            <a ng-click="scroll_top()" href="posts-demo">
+                <div class="box-ratio ratio-box-content  image-opacity-zoom ">
+                    <div class="image" style="background-image:url({{one_data.data_img}});"></div>
+                    <div class="image2" style="background-image:url({{one_data.data_img_2}});"></div>
+                    <!-- button add -->
+                    <div class="box-add-to-cart">
+                        <a href="">
+                            <h6>
+                                Add to cart <i class="padding-l-5 fa-solid fa-plus"></i>
+                            </h6>
+                        </a>
+                    </div>
+                    <!-- End button add -->
+
+                </div>
+                <div class="data-category">
+                    <p>{{one_data.data_category}}</p>
+                </div>
+                <div class="data-product">
+                    <h6>{{one_data.data_name}}</h6>
+                    <div class="box-price" ng-if=" one_data.data_price_discount != ''">
+                        <p>{{one_data.data_price_discount}}</p>
+                        <del>{{one_data.data_price}}</del>
+                    </div>
+                    <div class="box-price" ng-if=" one_data.data_price_discount == ''">
+                        <p>{{one_data.data_price}}</p>
+                    </div>
+                </div>
+                <!-- box hightlight -->
+                <div ng-if=" one_data.data_price_discount != ''">
+                    <div class="box-highlight">
+                        <H6>Sale!</H6>
+                    </div>
+                </div>
+                <div ng-if=" one_data.data_status == '2'">
+                    <div class="box-highlight out-of-stock">
+                        <H6>Out of stock</H6>
+                    </div>
+                </div>
+                <div ng-if=" one_data.data_status == '1'">
+                    <div class="box-highlight bestseller">
+                        <H6>best seller</H6>
+                    </div>
+                </div>
+                <!-- End box hightlight -->
+
+
+            </a>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="img-bottom-1 img-background" style="background-image:url(source-data/category/img-bottom.jpg)">
+    <div class="img-bottom-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquam officiis, soluta magnam in asperiores culpa libero necessitatibus distinctio ex tenetur consectetur,</div>
+    <div class="img-bottom-right">
+        <a href="">
+            Learn More
+        </a>
+    </div>
+
+</div>
+<!-- title large -->
+
+<div class="title-category-large">
+    <h6> POSTS FASHION </h6>
+</div>
+
+<div class="box-repeat-data-two" ng-init="getDataPostsBottom()">
+    <div class="box-dir-paginate-data" ng-repeat="one_data_posts in data_get_posts_bottom ">
+        <!-- 1 -->
+        <div class="one-data">
+
+            <!-- box-ratio-xx -->
+            <a ng-click="scroll_top()" href="posts-demo">
+                <div class="box-ratio ratio-4-3 image-zoom">
+
+                    <div class="image2 overlay-show-hidden " style="background-image:url({{one_data_posts.posts_img}});background-position: top;"></div>
+
+                    <div class="bottom-left edit-by-project">
+                        <a href="">
+                            <h6>{{one_data_posts.posts_name}}</h6>
+                        </a>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+</div>
+<!-- title large -->
+
+<div class="title-category-large">
+    <h6>WHAT’S NEW </h6>
+</div>
+<div class="img-bottom-2">
+    <img width="100%" src="source-data/category/img-bottom-2.png" alt="">
+</div>
+
+<!-- 02.4 Khối pagination -->
+<div class="pagination_by_project left-start" ng-include="'content-admin-panel/general-ingredients/view-pagination/pagination.html'" scope="" onload=""></div>
+<!-- 02.4 End khối pagination -->
